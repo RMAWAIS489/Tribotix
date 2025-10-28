@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
+import { dmSans } from "../layout";
 
 const faqs = [
   {
@@ -42,7 +44,7 @@ export default function Footer() {
   return (
     <>
       {/* FAQs Section */}
-      <section className="w-full bg-[#053b44] text-white py-24 px-6 md:px-16 lg:px-24">
+      <section className={`w-full bg-[#053b44] text-white py-24 px-6 md:px-16 lg:px-24 ${dmSans.className}`}>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
           {/* Left Section */}
           <motion.div
@@ -103,23 +105,41 @@ export default function Footer() {
         </div>
 
         {/* Divider line */}
-        <div className="relative mt-24 w-full h-[2px] overflow-hidden">
+        {/* <div className="relative mt-24 w-full h-[2px] overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent animate-moveLine"></div>
-        </div>
+        </div> */}
+          <div className="relative mt-16 w-full h-[2px] overflow-hidden">
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent"></div>
+</div>
       </section>
 
       <section className="w-full bg-[#053b44] text-gray-300 py-8 px-6 md:px-16 lg:px-24">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           {/* About */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">Tribotex.io</h3>
-            <p className="text-sm  text-gray-400 leading-relaxed text-justify">
-              We’re not just here to code, automate, or design — we’re here to
-              solve, simplify, and scale what truly moves your business forward.
-              Your vision deserves more than a service. It deserves a team that
-              listens, builds, and believes.
-            </p>
-          </div>
+       <div className="space-y-4 flex flex-col items-start">
+  {/* Logo Section */}
+  <div className="relative w-40 h-auto flex items-center">
+    <Image
+      src="/images/logo1.png"
+      alt="Triboter Logo"
+      width={160}   // Adjust width
+      height={80}   // Adjust height if needed
+      className="object-contain"
+      priority
+    />
+  </div>
+
+  {/* Text Content */}
+  <div>
+    <p className="text-sm space-y-2 text-gray-400 leading-relaxed w-[12rem] text-justify">
+      We’re not just here to code, automate, or design — we’re here to
+      solve, simplify, and scale what truly moves your business forward.
+      Your vision deserves more than a service. It deserves a team that
+      listens, builds, and believes.
+    </p>
+  </div>
+</div>
+
 
           {/* Services */}
           <div>
@@ -162,7 +182,7 @@ export default function Footer() {
             <h4 className="text-2xl font-semibold text-white mb-3">
               Get In Touch!
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-1 text-sm text-gray-400">
               <li className="hover:text-[#53b1b8] transition">
                 📞 Phone: (+1) 786 9520-251
               </li>
@@ -182,9 +202,7 @@ export default function Footer() {
           </div>
         </div>
         {/* Footer Bottom Animated Line */}
-    <div className="relative mt-16 w-full h-[2px] overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent"></div>
-</div>
+  
 
 
         {/* Copyright Text */}

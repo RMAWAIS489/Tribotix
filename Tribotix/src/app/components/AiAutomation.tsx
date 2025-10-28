@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Bot, Workflow, Handshake } from "lucide-react";
 import Link from "next/link";
+import { dmSans } from "../layout";
 const AiAutomation: React.FC = () => {
   return (
-    <div id="ai_automation" className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col md:flex-row items-start justify-center gap-16">
+    <div id="ai_automation" className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col md:flex-row items-start justify-center gap-16 ">
       {/* Left Side - Main Content */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -17,11 +18,11 @@ const AiAutomation: React.FC = () => {
       >
         <h1 className="text-md text-gray-500 mb-4">AI-Powered Automation</h1>
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
+        <h2 className={`text-4xl md:text-5xl font-bold text-gray-800 mb-6 w-[27rem] ${dmSans.className}`}>
           Build Systems That Work While You Sleep
         </h2>
 
-        <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
+        <p className="text-gray-700 text-md leading-relaxed mb-8 w-[25rem] text-justify">
           Unlock the next level of business efficiency with tailored automation
           solutions that adapt to your operations. At{" "}
           <span className="text-[#53b1b8] font-semibold">Tribotex</span>, we
@@ -59,7 +60,7 @@ const AiAutomation: React.FC = () => {
         className="md:w-1/2 flex flex-col gap-8"
       >
         {/* Feature 1 */}
-        <div className="group p-6 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
+        <div className="group p-5 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
           {/* Icon Section */}
           <div className="bg-[#53b1b8]/10 p-4 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
             <Workflow className="w-7 h-7 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />
@@ -70,7 +71,7 @@ const AiAutomation: React.FC = () => {
             <h3 className="text-xl font-semibold text-[#053b44] mb-2 group-hover:text-[#53b1b8] transition-colors duration-300">
               Custom Business Automation Pipelines
             </h3>
-            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <p className="text-gray-700 text-md leading-relaxed text-justify">
               We build intelligent automation pipelines on top of your existing
               tech stack — CRMs, forms, emails, and more — saving hours of
               repetitive tasks and boosting operational efficiency without
@@ -80,7 +81,7 @@ const AiAutomation: React.FC = () => {
         </div>
 
         {/* Feature 2 */}
-        <div className="group p-6 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
+        <div className="group p-5 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
           {/* Icon Section */}
           <div className="bg-[#53b1b8]/10 p-4 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
             <Bot className="w-7 h-7 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />
@@ -101,7 +102,7 @@ const AiAutomation: React.FC = () => {
         </div>
 
         {/* Feature 3 */}
-        <div className="group p-6 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
+        <div className="group p-5 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
           {/* Icon Section */}
           <div className="bg-[#53b1b8]/10 p-4 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
             <Handshake className="w-7 h-7 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />

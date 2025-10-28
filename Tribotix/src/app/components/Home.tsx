@@ -1,21 +1,30 @@
+"use client"
+import { useEffect, useRef } from "react";
 import { dmSans } from "../layout";
 
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+    useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.5; // 👈 0.5 = half speed, 2.0 = double speed
+    }
+  }, []);
   return (
     <section
       id="home"
       className={`flex flex-col items-center justify-center min-h-screen text-center px-4 ${dmSans.className}`}
     >
-        <video
-    autoPlay
-    loop
-    muted
-    className="absolute top-0 left-0 w-full h-full object-cover z-0"
-  >
-    <source src="/videos/background.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+    <video
+  autoPlay
+  loop
+  muted
+  className="absolute top-[5rem] left-0 w-full h-full object-cover z-0 opacity-20"
+>
+  <source src="/videos/background2.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 <div className="relative z-10">
       {/* Heading with weight 600 */}
       <h1

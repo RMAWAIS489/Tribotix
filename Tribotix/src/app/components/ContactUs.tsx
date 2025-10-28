@@ -67,7 +67,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             className="group flex items-start gap-5 border-2 border-gray-300 bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl hover:border-[#53b1b8] hover:bg-[#f0fafa] transition-all duration-300"
           >
-            <div className="bg-[#53b1b8]/10 p-5 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
+            <div className="bg-[#53b1b8]/10 p-1 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
               <Mail className="w-7 h-7 text-[#53b1b8] group-hover:text-white" />
             </div>
             <div>
@@ -82,7 +82,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             className="group flex items-start gap-5 border-2 border-gray-300 bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl hover:border-[#53b1b8] hover:bg-[#f0fafa] transition-all duration-300"
           >
-            <div className="bg-[#53b1b8]/10 p-5 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
+            <div className="bg-[#53b1b8]/10 p-1 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
               <Phone className="w-7 h-7 text-[#53b1b8] group-hover:text-white" />
             </div>
             <div>
@@ -97,7 +97,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             className="group flex items-start gap-5 border-2 border-gray-300 bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl hover:border-[#53b1b8] hover:bg-[#f0fafa] transition-all duration-300"
           >
-            <div className="bg-[#53b1b8]/10 p-5 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
+            <div className="bg-[#53b1b8]/10 p-1 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
               <MessageCircle className="w-7 h-7 text-[#53b1b8] group-hover:text-white" />
             </div>
             <div>
@@ -112,7 +112,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
             className="group flex items-start gap-5 border-2 border-gray-300 bg-white p-6 rounded-2xl shadow-md hover:shadow-2xl hover:border-[#53b1b8] hover:bg-[#f0fafa] transition-all duration-300"
           >
-            <div className="bg-[#53b1b8]/10 p-5 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
+            <div className="bg-[#53b1b8]/10 p-2 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
               <Clock className="w-7 h-7 text-[#53b1b8] group-hover:text-white" />
             </div>
             <div>

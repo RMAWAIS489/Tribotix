@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FaCogs, FaRobot, FaLaptopCode, FaChartLine, FaPaintBrush, FaSyncAlt } from "react-icons/fa";
+import { dmSans } from "../layout";
 
 export default function Services() {
   const services = [
@@ -86,7 +87,7 @@ export default function Services() {
   ];
 
   return (
-    <div id="services" className="min-h-screen bg-[#053b44] text-gray-100 px-6 md:px-16 py-16">
+    <div id="services" className={`min-h-screen bg-[#053b44] text-gray-100 px-6 md:px-16 py-16 ${dmSans.className}`}>
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -94,10 +95,10 @@ export default function Services() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h1 className="text-5xl md:text-6xl font-bold mb-4 text-[#53b1b8]">
+        <h1 className="text-5xl md:text-4xl font-bold mb-4 text-[#53b1b8]">
           Our Services!
         </h1>
-        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+        <p className="text-md text-gray-300 max-w-3xl mx-auto">
           We specialize in building robust, scalable, and secure web and mobile
           applications. Our team uses the latest frameworks and industry best
           practices to bring your ideas to life. Each project is fully custom-coded,
@@ -106,31 +107,34 @@ export default function Services() {
       </motion.div>
 
       {/* Services Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {services.map((service, index) => (
-          <motion.div
-            key={service.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            className="bg-[#041b27] rounded-2xl shadow-lg p-8 hover:shadow-[#53b1b8]/40 transition-all duration-300 hover:-translate-y-2"
-          >
-            <div className="flex items-center gap-4 mb-4">
-              {service.icon}
-              <h2 className="text-2xl font-semibold">{service.title}</h2>
-            </div>
-            <p className="text-gray-300 mb-4">{service.description}</p>
-            <ul className="space-y-2 text-gray-400 list-disc list-inside">
-              {service.list.map((item, i) => (
-                <li key={i} className="hover:text-[#53b1b8] transition">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+ <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {services.map((service, index) => (
+    <motion.div
+      key={service.title}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className="bg-[rgb(4,27,39)] rounded-xl shadow-md p-5  hover:shadow-[#53b1b8]/40 transition-all duration-300 hover:-translate-y-2 
+                 w-80 h-80"  // 👈 add these two for width & height
+    >
+      <div className="flex items-center gap-3 mb-3">
+        {service.icon}
+        <h2 className="text-lg font-semibold">{service.title}</h2>
       </div>
+      <p className="text-sm text-gray-300 my-3 w-72">{service.description}</p>
+      <ul className="space-y-1.5 text-gray-400 list-disc list-inside">
+        {service.list.map((item, i) => (
+          <li key={i} className="hover:text-[#53b1b8] transition text-sm">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </motion.div>
+  ))}
+</div>
+
+
     </div>
   );
 }
