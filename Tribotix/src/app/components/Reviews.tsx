@@ -14,21 +14,21 @@ export default function Reviews() {
   const testimonials = [
     {
       quote:
-        "Working with LeapsDev was like having a team of senior experts available whenever we needed and dedicated to our success. Their attention to detail and technical expertise is unmatched.",
+        "Working with Tribotex was like having a team of senior experts available whenever we needed and dedicated to our success. Their attention to detail and technical expertise is unmatched.",
       name: "Priya Singh",
       position: "Founder, Wellness Collective",
        image: "/images/priya.jpg",
     },
     {
       quote:
-        "From design to development to marketing – LeapsDev delivered everything under one roof. The quality exceeded our expectations and the results speak for themselves.",
+        "From design to development to marketing – Tribotex delivered everything under one roof. The quality exceeded our expectations and the results speak for themselves.",
       name: "Lara Chen",
       position: "CEO, EduGrowth Hub",
        image: "/images/lara.jpg",
     },
     {
       quote:
-        "LeapsDev transformed our entire business operation. Their AI automation saved us 40 hours per week and increased our revenue by 200%. Absolutely phenomenal work!",
+        "Tribotex transformed our entire business operation. Their AI automation saved us 40 hours per week and increased our revenue by 200%. Absolutely phenomenal work!",
       name: "William Lawson",
       position: "Head of Operations, e-Commerce Co.",
        image: "/images/william.jpg",

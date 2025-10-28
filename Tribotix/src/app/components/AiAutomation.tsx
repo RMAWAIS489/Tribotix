@@ -24,7 +24,7 @@ const AiAutomation: React.FC = () => {
         <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
           Unlock the next level of business efficiency with tailored automation
           solutions that adapt to your operations. At{" "}
-          <span className="text-[#53b1b8] font-semibold">LeapsDev</span>, we
+          <span className="text-[#53b1b8] font-semibold">Tribotex</span>, we
           don’t just automate tasks — we reimagine how your business runs. From
           building intelligent workflows on top of your existing platforms to
           deploying AI chatbots and voice-powered sales agents, we help you cut

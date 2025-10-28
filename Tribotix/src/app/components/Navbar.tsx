@@ -1,21 +1,42 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="w-full px-8 py-2 flex items-center justify-between shadow-md bg-transparent  top-0 z-50">
-      <div className="flex items-center gap-6">
-        <h5 className="text-2xl md:text-3xl font-bold text-white tracking-wide">
-          Triboter
-        </h5>
+    <nav className="w-full px-8 py-3  flex items-center justify-between shadow-md bg-transparent relative top-0 z-10">
+      {/* Logo Section */}
+      <div className="flex items-center gap-4">
+       <div className="relative w-40 h-auto flex items-center justify-center">
+  <Image
+    src="/images/logo1.png"
+    alt="Triboter Logo"
+    width={160}  // 40 * 4px = 160px
+    height={80}  // adjust to your logo’s real height ratio
+    className="object-contain"
+    priority
+  />
+</div>
+
       </div>
 
+      {/* Navigation Links */}
       <div className="flex items-center gap-8 border border-gray-600 border-opacity-10 pl-4 pr-1 py-1 rounded-lg shadow-md bg-gray-900/80">
-        <Link href="#home" className="text-gray-100 font-semibold hover:font-bold hover:underline hover:underline-offset-8 transition">Home</Link>
-        <Link href="#services" className="text-gray-100 font-semibold hover:font-bold hover:underline hover:underline-offset-8 transition">Services</Link>
-        <Link href="#ai_automation" className="text-gray-100 font-semibold hover:font-bold hover:underline hover:underline-offset-8 transition">AI Automation</Link>
-        <Link href="#about_us" className="text-gray-100 font-semibold hover:font-bold hover:underline hover:underline-offset-8 transition">About Us</Link>
-        <Link href="#contact_us" className="text-gray-100 font-semibold hover:font-bold hover:underline hover:underline-offset-8 transition">Contact Us</Link>
+        <Link href="#home" className="text-gray-100 font-semibold hover:font-bold hover:text-[#53b1b8] transition">
+          Home
+        </Link>
+        <Link href="#services" className="text-gray-100 font-semibold hover:font-bold hover:text-[#53b1b8] transition">
+          Services
+        </Link>
+        <Link href="#ai_automation" className="text-gray-100 font-semibold hover:font-bold hover:text-[#53b1b8] transition">
+          AI Automation
+        </Link>
+        <Link href="#about_us" className="text-gray-100 font-semibold hover:font-bold hover:text-[#53b1b8] transition">
+          About Us
+        </Link>
+        <Link href="#contact_us" className="text-gray-100 font-semibold hover:font-bold hover:text-[#53b1b8] transition">
+          Contact Us
+        </Link>
 
         <Link
           href="#contact_us"

@@ -6,7 +6,7 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    question: "What makes LeapsDev different?",
+    question: "What makes Tribotex different?",
     answer:
       "Our edge lies in our team — top 1% experts in design, development, and AI. Plus, we approach every project with a focus on ROI, usability, and scalability.",
   },
@@ -112,7 +112,7 @@ export default function Footer() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
           {/* About */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">LeapsDev.Com</h3>
+            <h3 className="text-2xl font-bold text-white">Tribotex.io</h3>
             <p className="text-sm  text-gray-400 leading-relaxed text-justify">
               We’re not just here to code, automate, or design — we’re here to
               solve, simplify, and scale what truly moves your business forward.
@@ -170,7 +170,7 @@ export default function Footer() {
                 💬 WhatsApp: (+92) 327-1080-439
               </li>
               <li className="hover:text-[#53b1b8] transition">
-                ✉️ Email: Contact@leapsdev.com
+                ✉️ Email: Contact@tribotexdev.com
               </li>
               <li className="hover:text-[#53b1b8] transition">
                 📍 4CCX+FW, Railway Rd, Kasur, 55050
@@ -190,7 +190,7 @@ export default function Footer() {
         {/* Copyright Text */}
         <div className="mt-8 pt-6 text-center text-sm text-gray-400">
           © 2025{" "}
-          <span className="text-[#53b1b8] font-semibold">LeapsDev.Com</span>{" "}
+          <span className="text-[#53b1b8] font-semibold">Tribotex.io</span>{" "}
           PVT. LTD. All rights reserved.
         </div>
       </section>
