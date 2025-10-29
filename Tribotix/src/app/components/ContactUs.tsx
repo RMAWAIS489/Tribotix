@@ -234,9 +234,16 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
  <button
     type="submit"
-    className="px-8 py-2.5 bg-[#53b1b8] text-white font-semibold rounded-lg hover:bg-[#053b44] transition-all duration-300"
-  >
-    Submit
+    className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
+                         bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
+                         bg-[length:200%_200%] animate-gradient-flow
+                         shadow-[0_0_15px_rgba(83,177,184,0.5)]
+                         hover:shadow-[0_0_30px_rgba(83,177,184,0.8)]
+                         hover:scale-[1.05] transition-all duration-500 ease-out overflow-hidden"
+            >
+              <span className="relative z-10">Submit</span>
+              <span className="absolute inset-0 rounded-xl border border-white/20"></span>
+              <span className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 bg-gradient-to-r from-[#53b1b8]/20 to-[#0ba5ec]/20 blur-md transition-opacity duration-500"></span>
   </button>
 
 </motion.form>
