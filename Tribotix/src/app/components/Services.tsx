@@ -87,7 +87,7 @@ export default function Services() {
   ];
 
   return (
-    <div id="services" className={`min-h-screen bg-[#053b44] text-gray-100 px-6 md:px-16 py-16 ${dmSans.className}`}>
+    <div id="services" className={`min-h-screen bg-[#053b44] text-gray-100 px-6 md:px-16 lg:px-32 py-16 md:py-32 lg:py-64  ${dmSans.className}`}>
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
