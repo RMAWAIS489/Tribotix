@@ -5,6 +5,7 @@ import { Mail, Phone, MessageCircle, Clock } from "lucide-react";
 import Link from "next/link";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { dmSans } from "../layout";
 
 export default function ContactUs() {
 
@@ -44,12 +45,12 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 };
 
   return (
-    <div id="contact_us" className="bg-white text-gray-900 px-6 md:px-20 py-20">
+    <div id="contact_us" className={`bg-white text-gray-900 px-6 md:px-20 py-20 ${dmSans.className}`}>
       {/* ✅ Header */}
       <div className="text-center space-y-6 mb-16">
-        <p>Get in Touch</p>
-        <h3 className="text-4xl text-[#316e72] mb-6">
-  Ready to <span className="text-black font-bold">elevate</span> your game?
+        <p className="text-sm sm:text-base md:text-[13px] text-gray-500">Get in Touch</p>
+        <h3 className="text-4xl font-semibold text-[#316e72] mb-6">
+  Ready to <span className="text-black font-bold">"elevate"</span> your game?
 </h3>
 
         <p className="text-mdv text-gray-500  mx-auto">
@@ -168,7 +169,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   whileInView={{ opacity: 1, x: 0 }}
   transition={{ duration: 0.8 }}
   viewport={{ once: true }}
-  className="md:w-1/2 w-full space-y-6"
+  className="md:w-1/2 w-full space-y-12"
 >
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
     <input

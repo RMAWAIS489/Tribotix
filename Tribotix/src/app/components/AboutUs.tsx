@@ -41,13 +41,13 @@ const AboutUs: React.FC = () => {
       viewport={{ once: true }}
       className="md:w-1/2 text-center md:text-left space-y-4"
     >
-      <h1 className="text-sm sm:text-base md:text-lg text-gray-500">
+      <h1 className="text-sm sm:text-base md:text-[13px] text-gray-500">
         Who We Are?
       </h1>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
         Ideas Breathe, We Give Them Life.
       </h2>
-      <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-justify max-w-[32rem] mx-auto md:mx-0">
+      <p className="text-gray-600  sm:text-base md:text-[16px] leading-relaxed text-justify max-w-[32rem] mx-auto md:mx-0">
         At{" "}
         <span className="text-[#53b1b8] font-semibold">Tribotex.io</span>, we
         believe businesses should not just evolve — they should leap ahead.
@@ -79,13 +79,13 @@ const AboutUs: React.FC = () => {
       viewport={{ once: true }}
       className="md:w-1/2 text-center md:text-left space-y-4"
     >
-      <h1 className="text-sm sm:text-base md:text-lg text-gray-500">
+      <h1 className="text-sm sm:text-base md:text-[13px] text-gray-500">
         What We Do?
       </h1>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
         No “magic.” Just Proven Logic.
       </h2>
-      <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed text-justify max-w-[32rem] mx-auto md:mx-0">
+      <p className="text-gray-600 text-sm sm:text-base md:text-[16px] leading-relaxed text-justify max-w-[32rem] mx-auto md:mx-0">
         We offer end-to-end digital solutions that merge creativity with
         technology and intelligence with automation. Our services are designed
         to give business owners a competitive edge in the digital age. Whether

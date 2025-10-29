@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { dmSans } from "../layout";
 
 export default function Reviews() {
   const stats = [
@@ -36,7 +37,7 @@ export default function Reviews() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20">
+    <div className={`min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 ${dmSans.className}`}>
       {/* Top Section - Two Columns */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center mb-20">
         {/* Left - Header */}
@@ -47,11 +48,11 @@ export default function Reviews() {
           viewport={{ once: true }}
           className="space-y-4"
         >
-          <p className="uppercase text-gray-500 tracking-wider">Reviews</p>
+          <p className="text-sm sm:text-base md:text-[15px] text-gray-500 font-semibold tracking-wider">Reviews</p>
           <h2 className="text-4xl md:text-4xl font-bold text-[#053b44]">
             What Our Customers Say
           </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
+          <p className="text-gray-600 md:text-[16px] leading-relaxed">
             Witness firsthand the user appreciation for our uncomplicated
             ticketing system in their daily activities.
           </p>
@@ -135,7 +136,7 @@ function Stats({ stats }: { stats: { title: string; value: number }[] }) {
   return (
     <div
       ref={ref}
-      className="flex justify-between items-center w-full max-w-md mx-auto md:mx-0"
+      className="flex justify-between items-center w-full  max-w-md mx-auto md:mx-0"
     >
       {stats.map((stat, index) => (
         <Counter
@@ -193,8 +194,8 @@ function Counter({
       transition={{ duration: 0.8, delay }}
       className="text-center"
     >
-      <h3 className="text-4xl md:text-5xl font-bold text-[#53b1b8]">{count}+</h3>
-      <p className="text-gray-700 font-medium">{title}</p>
+      <h3 className={`text-4xl md:text-5xl font-semibold text-[#53b1b8] `}>{count}+</h3>
+      <p className={`text-gray-700 font-semibold ${dmSans.className}`}>{title}</p>
     </motion.div>
   );
 }

@@ -4,10 +4,11 @@ import { motion } from "framer-motion";
 import { Users, Briefcase } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { dmSans } from "../layout";
 
 const EngagementModels: React.FC = () => {
   return (
-    <div  className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col items-center justify-center">
+    <div  className={`min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col items-center justify-center ${dmSans.className} `}>
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -17,8 +18,8 @@ const EngagementModels: React.FC = () => {
         className="text-center max-w-3xl mb-16"
       >
         <div className="text-center space-y-6 mb-16">
-          <p>Engagement Models</p>
-          <h3 className="text-4xl text-[#316e72] mb-6">
+          <p className="text-sm sm:text-base md:text-[15px] font-semibold text-gray-500">Engagement Models</p>
+          <h3 className="text-4xl font-semibold text-[#316e72] mb-6">
             Find the <span className="text-black font-bold"> “Right”</span>{" "}
             package
           </h3>
@@ -42,7 +43,7 @@ const EngagementModels: React.FC = () => {
         >
           {/* Title and Button Row */}
           <div className="w-full flex items-center justify-between">
-            <h3 className="text-2xl font-semibold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
+            <h3 className="text-2xl font-bold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
               Level Up My Team
             </h3>
             <Link
@@ -87,7 +88,7 @@ const EngagementModels: React.FC = () => {
         >
           {/* Title and Button Row */}
           <div className="w-full flex items-center justify-between">
-            <h3 className="text-2xl font-semibold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
+            <h3 className="text-2xl font-bold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
               All-in-one Solution
             </h3>
             <Link

@@ -16,7 +16,7 @@ const AiAutomation: React.FC = () => {
         viewport={{ once: true }}
         className="md:w-1/2"
       >
-        <h1 className="text-md text-gray-500 mb-4">AI-Powered Automation</h1>
+        <p className="text-sm sm:text-base md:text-[15px] font-semibold text-gray-500 mb-4">AI-Powered Automation</p>
 
         <h2 className={`text-4xl md:text-5xl font-bold text-gray-800 mb-6 w-[27rem] ${dmSans.className}`}>
           Build Systems That Work While You Sleep
@@ -57,10 +57,10 @@ const AiAutomation: React.FC = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="md:w-1/2 flex flex-col gap-8"
+        className="md:w-[45rem] flex flex-col gap-8"
       >
         {/* Feature 1 */}
-        <div className="group p-5 rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
+        <div className="group p-5  rounded-2xl border-2 border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] hover:shadow-2xl transition-all duration-300 flex gap-5 items-start">
           {/* Icon Section */}
           <div className="bg-[#53b1b8]/10 p-4 rounded-full group-hover:bg-[#53b1b8] transition-colors duration-300">
             <Workflow className="w-7 h-7 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />
@@ -71,7 +71,7 @@ const AiAutomation: React.FC = () => {
             <h3 className="text-xl font-semibold text-[#053b44] mb-2 group-hover:text-[#53b1b8] transition-colors duration-300">
               Custom Business Automation Pipelines
             </h3>
-            <p className="text-gray-700 text-md leading-relaxed text-justify">
+            <p className="text-gray-600 text-[14px] leading-relaxed text-justify">
               We build intelligent automation pipelines on top of your existing
               tech stack — CRMs, forms, emails, and more — saving hours of
               repetitive tasks and boosting operational efficiency without
@@ -92,7 +92,7 @@ const AiAutomation: React.FC = () => {
             <h3 className="text-xl font-semibold text-[#053b44] mb-2 group-hover:text-[#53b1b8] transition-colors duration-300">
               AI Chatbots For 24/7 Engagement
             </h3>
-            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <p className="text-gray-600 text-[14px] leading-relaxed text-justify">
               Deploy smart, conversational AI chatbots that handle support, lead
               qualification, and FAQs — fully customized to your brand tone,
               tools, and audience behavior across web, social, or messaging
@@ -113,7 +113,7 @@ const AiAutomation: React.FC = () => {
             <h3 className="text-xl font-semibold text-[#053b44] mb-2 group-hover:text-[#53b1b8] transition-colors duration-300">
               AI-Powered Agents That Close Deals
             </h3>
-            <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
+            <p className="text-gray-600 sm:text-base md:text-[14px] leading-relaxed text-justify">
               From cold outreach to handling incoming inquiries, our AI Sales
               Agents handle calls like real sales reps — following scripts,
               answering objections, and updating CRMs, all in real time.
