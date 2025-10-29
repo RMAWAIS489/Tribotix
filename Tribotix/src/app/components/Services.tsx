@@ -116,7 +116,7 @@ export default function Services() {
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
       className="bg-[rgb(4,27,39)] rounded-xl shadow-md p-5  hover:shadow-[#53b1b8]/40 transition-all duration-300 hover:-translate-y-2 
-                 w-80 h-80"  // 👈 add these two for width & height
+                 w-80 h-80"  
     >
       <div className="flex items-center gap-3 mb-3">
         {service.icon}

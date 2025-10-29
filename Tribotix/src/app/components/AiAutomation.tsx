@@ -7,7 +7,7 @@ import Link from "next/link";
 import { dmSans } from "../layout";
 const AiAutomation: React.FC = () => {
   return (
-    <div id="ai_automation" className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col md:flex-row items-start justify-center gap-16 ">
+    <div id="ai_automation" className="min-h-screen bg-white text-gray-900 px-6 sm:px-8 md:px-16 lg:px-32 xlg:px-64 py-20 flex flex-col md:flex-row items-start justify-center gap-16 ">
       {/* Left Side - Main Content */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
