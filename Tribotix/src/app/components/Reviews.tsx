@@ -7,32 +7,32 @@ import { dmSans } from "../layout";
 
 export default function Reviews() {
   const stats = [
-    { title: "Projects", value: 180 },
-    { title: "Happy Clients", value: 90 },
-    { title: "Consultations", value: 300 },
+    { title: "Automation Projects", value: 180 },
+    { title: "Satisfied Clients", value: 90 },
+    { title: "AI Consultations", value: 300 },
   ];
 
   const testimonials = [
     {
       quote:
-        "Working with Tribotex was like having a team of senior experts available whenever we needed and dedicated to our success. Their attention to detail and technical expertise is unmatched.",
+        "Partnering with CodrionAI was like adding a full automation division to our company. Their AI workflows simplified our operations and delivered measurable ROI from day one.",
       name: "Priya Singh",
-      position: "Founder, Wellness Collective",
-       image: "/images/priya.jpg",
+      position: "Founder, Growth Wellness Co.",
+      image: "/images/priya.jpg",
     },
     {
       quote:
-        "From design to development to marketing – Tribotex delivered everything under one roof. The quality exceeded our expectations and the results speak for themselves.",
+        "From AI design to SaaS integration, CodrionAI handled everything seamlessly. Their workflow automation and precision in delivery truly elevated our digital product performance.",
       name: "Lara Chen",
       position: "CEO, EduGrowth Hub",
-       image: "/images/lara.jpg",
+      image: "/images/lara.jpg",
     },
     {
       quote:
-        "Tribotex transformed our entire business operation. Their AI automation saved us 40 hours per week and increased our revenue by 200%. Absolutely phenomenal work!",
+        "CodrionAI restructured our business using advanced AI automation pipelines. We reduced manual hours by 40 per week and doubled conversion efficiency within months — exceptional results!",
       name: "William Lawson",
-      position: "Head of Operations, e-Commerce Co.",
-       image: "/images/william.jpg",
+      position: "Head of Operations, eCommerce Suite",
+      image: "/images/william.jpg",
     },
   ];
 
@@ -48,13 +48,12 @@ export default function Reviews() {
           viewport={{ once: true }}
           className="space-y-4"
         >
-          <p className="text-sm sm:text-base md:text-[15px] text-gray-500 font-semibold tracking-wider">Reviews</p>
+          <p className="text-sm sm:text-base md:text-[15px] text-gray-500 font-semibold tracking-wider">Testimonials</p>
           <h2 className="text-4xl md:text-4xl font-bold text-[#053b44]">
-            What Our Customers Say
+            What Our Clients Say
           </h2>
           <p className="text-gray-600 md:text-[16px] leading-relaxed">
-            Witness firsthand the user appreciation for our uncomplicated
-            ticketing system in their daily activities.
+            Discover how businesses leverage CodrionAI’s automation systems, SaaS integrations, and AI-driven solutions to scale smarter and work faster.
           </p>
         </motion.div>
 
@@ -114,11 +113,6 @@ export default function Reviews() {
   ))}
 </div>
 
-
-
-
-
-
     </div>
   );
 }
@@ -137,7 +131,7 @@ function Stats({ stats }: { stats: { title: string; value: number }[] }) {
           key={index}
           value={stat.value}
           title={stat.title}
-          start={inView} // only start when visible
+          start={inView}
           delay={index * 0.3}
         />
       ))}

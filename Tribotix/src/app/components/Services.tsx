@@ -7,81 +7,81 @@ import { dmSans } from "../layout";
 export default function Services() {
   const services = [
     {
-      title: "SAAS Solutions",
-      icon: <FaCogs className="text-4xl text-[#53b1b8]" />,
-      description:
-        "From Idea to Infrastructure—Fully Engineered. We build secure, scalable, and high-performing software tailored to your business model with modern frameworks and best practices.",
-      list: [
-        "DevOps Setup & Deployment",
-        "SaaS MVP Development",
-        "Rapid SaaS Prototyping & Design",
-        "API Development & Integration",
-        "Ongoing SaaS Maintenance & Support",
-      ],
-    },
-    {
-      title: "Web & Mobile Apps",
-      icon: <FaLaptopCode className="text-4xl text-[#53b1b8]" />,
-      description:
-        "User-Centric, Cross-Platform, Future-Ready. We deliver responsive and high-performance apps built for mobile and web with a seamless experience across all devices.",
-      list: [
-        "Cross-Platform Android/iOS/Websites",
-        "E-commerce & Multi-Vendor Solutions",
-        "Industry & Consumer-Facing Apps",
-        "In-House Consultation & Architecture",
-        "Maintenance, Support & Migration",
-      ],
-    },
-    {
-      title: "Sales & Marketing",
-      icon: <FaChartLine className="text-4xl text-[#53b1b8]" />,
-      description:
-        "Drive Demand. Close Faster. Scale Smarter. We power up your sales pipeline with tailored marketing strategies, lead generation, and conversion-focused campaigns built for results.",
-      list: [
-        "Lead Generation",
-        "Pay-Per-Click Ads",
-        "Social Media Marketing",
-        "Outreach & Email Marketing",
-        "Cold Calling with AI Sales Agents",
-      ],
-    },
-    {
-      title: "Business Automation",
+      title: "AI Automation & RAG Systems",
       icon: <FaSyncAlt className="text-4xl text-[#53b1b8]" />,
       description:
-        "Let AI Handle the Busywork. You Focus on Growth. We automate 90% of your repetitive operations—cutting manual labor, increasing productivity, and driving long-term profitability.",
+        "Transform manual workflows into intelligent, RAG-powered automation pipelines. We design end-to-end AI systems that integrate data retrieval, reasoning, and generation to streamline your business processes.",
       list: [
-        "Workflow Automation",
-        "Custom Integration Solutions",
-        "Outreach Follow-up Sequences",
-        "Invoicing & Payment Collection",
-        "Internal Process Optimization",
+        "Custom AI Workflow Automation",
+        "Retrieval-Augmented Generation (RAG) Systems",
+        "Agentic AI Integration & Orchestration",
+        "Automated Document & Data Processing",
+        "Business Process Optimization",
       ],
     },
     {
-      title: "Artificial Intelligence",
+      title: "SaaS Platforms & Cloud Solutions",
+      icon: <FaCogs className="text-4xl text-[#53b1b8]" />,
+      description:
+        "From concept to deployment, we build secure, scalable SaaS products powered by AI and automation. Every product is engineered for performance, cloud scalability, and data-driven intelligence.",
+      list: [
+        "AI-Enhanced SaaS Product Development",
+        "Cloud-Native Infrastructure Setup",
+        "API Development & Integration",
+        "Secure Authentication & Data Management",
+        "Continuous Optimization & DevOps Automation",
+      ],
+    },
+    {
+      title: "Intelligent Agents & Voice Bots",
       icon: <FaRobot className="text-4xl text-[#53b1b8]" />,
       description:
-        "Smarter Systems. Faster Growth. AI at the Core. From chatbots to fully autonomous AI agents, we craft intelligent systems to boost efficiency, reduce overhead, and scale operations.",
+        "Empower your business with AI-powered chatbots and voice agents that understand, respond, and act in real time. We craft custom conversational and autonomous AI agents built for engagement and conversion.",
       list: [
-        "Custom AI Automations",
-        "Conversational Chatbots",
-        "AI-Powered Sales Agents",
-        "LLM Training & Fine-Tuning",
-        "Custom ML-Engineering",
+        "AI Chatbots for Web & CRM",
+        "Voice Agents & Call Automation",
+        "LLM-Powered Customer Support Systems",
+        "AI Sales & Outreach Assistants",
+        "Natural Language Understanding (NLU) Integration",
       ],
     },
     {
-      title: "Design & Branding",
+      title: "Business Process Automation",
+      icon: <FaChartLine className="text-4xl text-[#53b1b8]" />,
+      description:
+        "Eliminate inefficiencies and scale your operations with tailored automation workflows. Our systems connect apps, teams, and data into a unified AI-driven ecosystem that saves hours daily.",
+      list: [
+        "Workflow Automation & Integration",
+        "CRM & ERP Automation Pipelines",
+        "AI-Powered Reporting Dashboards",
+        "Email, Lead & Task Automation",
+        "Operational Intelligence Tracking",
+      ],
+    },
+    {
+      title: "Data Science & Analytics",
+      icon: <FaLaptopCode className="text-4xl text-[#53b1b8]" />,
+      description:
+        "Turn data into strategic advantage with predictive insights and AI analytics. We build pipelines that collect, process, and visualize business data for better decisions and smarter growth.",
+      list: [
+        "Predictive & Prescriptive Analytics",
+        "Custom Machine Learning Models",
+        "Real-Time Data Visualization Dashboards",
+        "AI-Powered Forecasting Tools",
+        "Big Data Pipeline Engineering",
+      ],
+    },
+    {
+      title: "Design & Brand Experience",
       icon: <FaPaintBrush className="text-4xl text-[#53b1b8]" />,
       description:
-        "Designs That Speak, Brands That Connect. We translate your brand essence into powerful visuals and product designs that not only look good but convert better.",
+        "Design that inspires action. We create digital experiences and brand identities that merge usability with innovation, ensuring every interaction reflects your AI-first vision.",
       list: [
-        "UI/UX Design for Web & Mobile",
-        "Product & Platform Design",
-        "Brand Identity & Logo Systems",
-        "Conversion-Driven Marketing Materials",
-        "Design Systems & Prototypes",
+        "AI-Driven UI/UX Design",
+        "Product Interface Optimization",
+        "Brand Identity & Visual Systems",
+        "Interactive Prototypes & Mockups",
+        "Conversion-Centered Creative Assets",
       ],
     },
   ];
@@ -106,10 +106,7 @@ export default function Services() {
       Our Services!
     </h1>
     <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed">
-      We specialize in building robust, scalable, and secure web and mobile
-      applications. Our team uses the latest frameworks and industry best
-      practices to bring your ideas to life. Each project is fully custom-coded,
-      responsive, and tailored for performance, reliability, and scalability.
+      At CodrionAI, we specialize in building intelligent automation systems, RAG pipelines, and scalable SaaS products that transform how businesses operate. Every solution we create is engineered for precision, performance, and future-ready AI innovation.
     </p>
   </motion.div>
 
@@ -151,7 +148,6 @@ export default function Services() {
     ))}
   </div>
 </div>
-
 
   );
 }

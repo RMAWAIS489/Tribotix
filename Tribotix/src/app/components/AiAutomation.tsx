@@ -21,42 +21,44 @@ const AiAutomation: React.FC = () => {
         className="md:w-1/2 w-full text-center md:text-left space-y-4"
       >
         <p className="text-sm sm:text-base font-semibold text-gray-500">
-          AI-Powered Automation
+          AI-Powered Business Automation
         </p>
 
         <h2
           className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight ${dmSans.className}`}
         >
-          Build Systems That Work While You Sleep
+          Intelligent Systems That Scale Your Business 24/7
         </h2>
 
         <p className="text-gray-700 text-sm sm:text-base leading-relaxed text-justify md:pr-4">
-          Unlock the next level of business efficiency with tailored automation
-          solutions that adapt to your operations. At{" "}
-          <span className="text-[#53b1b8] font-semibold">Tribotex</span>, we
-          don’t just automate tasks — we reimagine how your business runs. From
-          building intelligent workflows on top of your existing platforms to
-          deploying AI chatbots and voice-powered sales agents, we help you cut
-          costs, speed up processes, and create scalable systems that work
-          around the clock. Whether you’re looking to reduce manual workload,
-          boost conversions, or deliver seamless support, our solutions are
-          engineered to fit your tools, your team, your goals — and grow with
-          your business.
+          Transform how your business operates with smart automation and AI-driven
+          systems that adapt, learn, and scale with you. At{" "}
+          <span className="text-[#53b1b8] font-semibold">CodrionAI</span>, we
+          specialize in building end-to-end intelligent workflows — from{" "}
+          <span className="font-semibold text-[#53b1b8]">
+            RAG-based AI assistants
+          </span>{" "}
+          and voice-powered agents to custom{" "}
+          <span className="font-semibold text-[#53b1b8]">SaaS automation tools</span>.
+          Our solutions optimize time, enhance productivity, and streamline your
+          operations. Whether automating client onboarding, lead generation, or
+          internal processes, we craft systems that work even while you sleep —
+          ensuring your business stays ahead, effortlessly.
         </p>
 
         <div className="flex justify-center md:justify-start">
           <Link
             href="#contact_us"
             className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 text-white font-semibold rounded-xl 
-             bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
+             bg-gradient-to-r from-[#021b2a] via-[#053b44] to-[#53b1b8] 
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]
              hover:shadow-[0_0_30px_rgba(83,177,184,0.8)]
              hover:scale-[1.05] transition-all duration-500 ease-out"
           >
-            <span className="relative z-10">Book a Free Demo</span>
+            <span className="relative z-10">Schedule a Free Consultation</span>
             <span className="absolute inset-0 rounded-xl border border-white/20"></span>
-            <span className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 bg-gradient-to-r from-[#53b1b8]/20 to-[#0ba5ec]/20 blur-md transition-opacity duration-500"></span>
+            <span className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 bg-gradient-to-r from-[#53b1b8]/20 to-[#021b2a]/20 blur-md transition-opacity duration-500"></span>
           </Link>
         </div>
       </motion.div>
@@ -73,18 +75,18 @@ const AiAutomation: React.FC = () => {
         {[
           {
             Icon: Workflow,
-            title: "Custom Business Automation Pipelines",
-            desc: "We build intelligent automation pipelines on top of your existing tech stack — CRMs, forms, emails, and more — saving hours of repetitive tasks and boosting operational efficiency without disruption.",
+            title: "AI-Driven Workflow Automation",
+            desc: "CodrionAI designs intelligent automation pipelines that integrate seamlessly with your CRMs, emails, and databases — eliminating manual tasks, increasing accuracy, and accelerating business outcomes.",
           },
           {
             Icon: Bot,
-            title: "AI Chatbots For 24/7 Engagement",
-            desc: "Deploy smart, conversational AI chatbots that handle support, lead qualification, and FAQs — fully customized to your brand tone, tools, and audience behavior across web, social, or messaging apps.",
+            title: "Conversational Chatbots & Voice Agents",
+            desc: "Deploy AI-powered chatbots and voice agents that provide 24/7 customer engagement, automate inquiries, and deliver personalized experiences — powered by advanced NLP and speech technologies.",
           },
           {
             Icon: Handshake,
-            title: "AI-Powered Agents That Close Deals",
-            desc: "From cold outreach to handling incoming inquiries, our AI Sales Agents handle calls like real sales reps — following scripts, answering objections, and updating CRMs, all in real time.",
+            title: "Sales & Support Agents That Convert",
+            desc: "Our AI agents handle outreach, qualify leads, follow up on prospects, and close deals — all while syncing data with your CRMs and marketing platforms in real time to maximize conversions.",
           },
         ].map(({ Icon, title, desc }, i) => (
           <div
