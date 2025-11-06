@@ -49,7 +49,7 @@ const AboutUs: React.FC = () => {
       </h2>
       <p className="text-gray-600  sm:text-base md:text-[16px] leading-relaxed text-justify max-w-[32rem] mx-auto md:mx-0">
         At{" "}
-        <span className="text-[#53b1b8] font-semibold">Tribotex.io</span>, we
+        <span className="text-[#53b1b8] font-semibold">cardionai</span>, we
         believe businesses should not just evolve — they should leap ahead.
         Founded on the vision to simplify growth through technology, we bring
         together the top 1% of global talent in development, AI, design, and
