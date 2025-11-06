@@ -104,114 +104,116 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider line */}
-        {/* <div className="relative mt-24 w-full h-[2px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent animate-moveLine"></div>
-        </div> */}
+     
           <div className="relative mt-16 w-full h-[2px] overflow-hidden">
   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent"></div>
 </div>
       </section>
 
-      <section className="w-full bg-[#053b44] text-gray-300 py-8 px-6 md:px-16 lg:px-24">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
-          {/* About */}
-       <div className="space-y-4 flex flex-col items-start">
-  {/* Logo Section */}
-  <div className="relative w-40 h-auto flex items-center">
-    <Image
-      src="/images/logo1.png"
-      alt="Triboter Logo"
-      width={160}   // Adjust width
-      height={80}   // Adjust height if needed
-      className="object-contain"
-      priority
-    />
+    <section className="w-full bg-[#053b44] text-gray-300 py-10 px-5 sm:px-10 md:px-16 lg:px-24">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 sm:gap-12 text-center md:text-left">
+    
+    {/* About Section */}
+    <div className="flex flex-col items-center md:items-start space-y-4">
+      {/* Logo */}
+      <div className="relative w-32 sm:w-40 flex items-center justify-center md:justify-start">
+        <Image
+          src="/images/logo1.png"
+          alt="Triboter Logo"
+          width={160}
+          height={80}
+          className="object-contain"
+          priority
+        />
+      </div>
+
+      {/* Description */}
+      <p className="text-sm text-gray-400 leading-relaxed max-w-xs sm:max-w-sm md:max-w-[12rem] text-center md:text-justify">
+        We’re not just here to code, automate, or design — we’re here to
+        solve, simplify, and scale what truly moves your business forward.
+        Your vision deserves more than a service. It deserves a team that
+        listens, builds, and believes.
+      </p>
+    </div>
+
+    {/* Services */}
+    <div>
+      <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4">
+        Services
+      </h4>
+      <ul className="space-y-2 text-sm sm:text-base text-gray-400">
+        {[
+          "Web Development",
+          "Sales & Marketing",
+          "E-commerce Solutions",
+          "Business Automation",
+          "Custom AI Agents",
+        ].map((service) => (
+          <li
+            key={service}
+            className="hover:text-[#53b1b8] transition-colors duration-300 cursor-pointer"
+          >
+            {service}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* Quick Links */}
+    <div>
+      <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4">
+        Quick Links
+      </h4>
+      <ul className="space-y-2 text-sm sm:text-base text-gray-400">
+        {["Home", "Services", "About Us", "Contact Us", "Work With Us"].map(
+          (link) => (
+            <li
+              key={link}
+              className="hover:text-[#53b1b8] transition-colors duration-300 cursor-pointer"
+            >
+              {link}
+            </li>
+          )
+        )}
+      </ul>
+    </div>
+
+    {/* Contact */}
+    <div className="w-full">
+      <h4 className="text-xl sm:text-2xl  font-semibold text-white mb-4">
+        Get In Touch!
+      </h4>
+      <ul className="space-y-1 text-sm sm:text-base text-gray-400">
+        <li className="hover:text-[#53b1b8] transition-colors duration-300">
+          📞 Phone: (+1) 786 9520-251
+        </li>
+        <li className="hover:text-[#53b1b8]  text-sm transition-colors duration-300">
+          💬 WhatsApp: (+92) 327-1080-439
+        </li>
+        <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
+          ✉️ Email: Contact@tribotexdev.com
+        </li>
+        <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
+          📍 4CCX+FW, Railway Rd, Kasur, 55050
+        </li>
+        <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
+          📍 Miami, Florida (FL), 33162, United States
+        </li>
+      </ul>
+    </div>
   </div>
 
-  {/* Text Content */}
-  <div>
-    <p className="text-sm space-y-2 text-gray-400 leading-relaxed w-[12rem] text-justify">
-      We’re not just here to code, automate, or design — we’re here to
-      solve, simplify, and scale what truly moves your business forward.
-      Your vision deserves more than a service. It deserves a team that
-      listens, builds, and believes.
-    </p>
+  {/* Footer Bottom Line */}
+  <div className="relative mt-10 w-full h-[1px] overflow-hidden bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent opacity-60"></div>
+
+  {/* Copyright */}
+  <div className="mt-6 text-center text-xs sm:text-sm text-gray-400">
+    © 2025{" "}
+    <span className="text-[#53b1b8] font-semibold">Tribotex.io</span> PVT. LTD.
+    All rights reserved.
   </div>
-</div>
+</section>
 
-
-          {/* Services */}
-          <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">Services</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">
-                Web Development
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Sales & Marketing
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                E-commerce Solutions
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Business Automation
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Custom AI Agents
-              </li>
-            </ul>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">
-              Quick Links
-            </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">Home</li>
-              <li className="hover:text-[#53b1b8] transition">Services</li>
-              <li className="hover:text-[#53b1b8] transition">About Us</li>
-              <li className="hover:text-[#53b1b8] transition">Contact Us</li>
-              <li className="hover:text-[#53b1b8] transition">Work With Us</li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">
-              Get In Touch!
-            </h4>
-            <ul className="space-y-1 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">
-                📞 Phone: (+1) 786 9520-251
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                💬 WhatsApp: (+92) 327-1080-439
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                ✉️ Email: Contact@tribotexdev.com
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                📍 4CCX+FW, Railway Rd, Kasur, 55050
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                📍 Miami, Florida (FL), 33162, United States
-              </li>
-            </ul>
-          </div>
-        </div>
-        {/* Footer Bottom Animated Line */}
-  
-
-
-        {/* Copyright Text */}
-        <div className="mt-8 pt-6 text-center text-sm text-gray-400">
-          © 2025{" "}
-          <span className="text-[#53b1b8] font-semibold">Tribotex.io</span>{" "}
-          PVT. LTD. All rights reserved.
-        </div>
-      </section>
     </>
   );
 }

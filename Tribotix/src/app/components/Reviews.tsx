@@ -63,63 +63,57 @@ export default function Reviews() {
       </div>
 
       {/* Testimonials Section */}
-<div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-16 relative z-10">
+<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 px-4 sm:px-6 lg:px-0 relative z-10">
   {testimonials.map((testimonial, index) => (
     <motion.div
       key={index}
-      initial={{ opacity: 0, x: -60 }} // move in from left
+      initial={{ opacity: 0, x: -60 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: index * 0.15 }}
       viewport={{ once: true }}
       className="relative group overflow-visible flex justify-center"
     >
-      {/* 💬 Floating Quote Icon — crosses the border */}
-      <div className="absolute -top-7 left-8 z-50 translate-y-2">
+      {/* 💬 Floating Quote Icon */}
+      <div className="absolute -top-6 left-6 sm:left-8 z-50 translate-y-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
           fill="#053b44"
-          className="w-[50px] h-[50px] opacity-90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)] group-hover:scale-110 transition-transform duration-500"
+          className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 opacity-90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)] group-hover:scale-110 transition-transform duration-500"
         >
           <path d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C359.6 32 288 103.6 288 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
         </svg>
       </div>
 
       {/* ==== Card Body ==== */}
-      <div className="relative w-[112%] h-[350px] flex flex-col justify-center items-center text-center p-8 rounded-2xl border border-gray-400 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] transition-all duration-500 group-hover:shadow-lg">
-        <p className="text-gray-700 italic mb-6 leading-relaxed max-w-xs">
+      <div className="relative w-full sm:w-[90%] md:w-[100%] lg:w-[112%] min-h-[300px] sm:min-h-[330px] md:h-[350px] flex flex-col justify-center items-center text-center p-6 sm:p-8 rounded-2xl border border-gray-300 bg-white hover:bg-[#f0fafa] hover:border-[#53b1b8] transition-all duration-500 group-hover:shadow-lg">
+        <p className="text-gray-700 italic mb-6 leading-relaxed text-sm sm:text-base md:text-[17px] max-w-xs sm:max-w-sm">
           “{testimonial.quote}”
         </p>
-         <div className="mb-4">
-  </div>
-<div className="flex items-center justify-center gap-4 ">
-  {/* 👩 Profile Image */}
-  <img
-    src={testimonial.image}
-    alt={testimonial.name}
-    className="w-16 h-16 rounded-full object-cover border-2 border-[#53b1b8] shadow-md"
-  />
 
-  {/* 👤 Name & Position */}
-  <div className="text-left">
-    <h4 className="text-md font-semibold text-[#053b44] leading-tight">
-      {testimonial.name}
-    </h4>
-    <p className="text-gray-500 text-sm leading-snug">
-      {testimonial.position}
-    </p>
-  </div>
-</div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* 👩 Profile Image */}
+          <img
+            src={testimonial.image}
+            alt={testimonial.name}
+            className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-[#53b1b8] shadow-md"
+          />
 
-
-
-
-        {/* Glow Behind Card */}
-     
+          {/* 👤 Name & Position */}
+          <div className="text-center sm:text-left">
+            <h4 className="text-base sm:text-md md:text-lg font-semibold text-[#053b44] leading-tight">
+              {testimonial.name}
+            </h4>
+            <p className="text-gray-500 text-xs sm:text-sm leading-snug">
+              {testimonial.position}
+            </p>
+          </div>
+        </div>
       </div>
     </motion.div>
   ))}
 </div>
+
 
 
 
@@ -188,14 +182,26 @@ function Counter({
   }, [start, value, delay]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={start ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.8, delay }}
-      className="text-center"
-    >
-      <h3 className={`text-4xl md:text-5xl font-semibold text-[#53b1b8] `}>{count}+</h3>
-      <p className={`text-gray-700 font-semibold ${dmSans.className}`}>{title}</p>
-    </motion.div>
+ <motion.div
+  initial={{ opacity: 0, y: 20 }}
+  animate={start ? { opacity: 1, y: 0 } : {}}
+  transition={{ duration: 0.8, delay }}
+  className="text-center flex flex-col items-center justify-center px-2 sm:px-4 md:px-6"
+>
+  {/* Counter Number */}
+  <h3
+    className={`text-3xl sm:text-4xl md:text-3xl lg:text-6xl font-bold text-[#53b1b8] tracking-tight`}
+  >
+    {count}+
+  </h3>
+
+  {/* Title */}
+  <p
+    className={`text-gray-700 font-semibold mt-1 sm:mt-2 text-sm sm:text-base md:text-md ${dmSans.className}`}
+  >
+    {title}
+  </p>
+</motion.div>
+
   );
 }

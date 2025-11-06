@@ -41,9 +41,9 @@ const AboutUs: React.FC = () => {
       viewport={{ once: true }}
       className="md:w-1/2 text-center md:text-left space-y-4"
     >
-      <h1 className="text-sm sm:text-base md:text-[13px] text-gray-500">
+      <p className="text-sm sm:text-base md:text-[13px] font-semibold text-gray-500">
         Who We Are?
-      </h1>
+      </p>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
         Ideas Breathe, We Give Them Life.
       </h2>
@@ -79,9 +79,9 @@ const AboutUs: React.FC = () => {
       viewport={{ once: true }}
       className="md:w-1/2 text-center md:text-left space-y-4"
     >
-      <h1 className="text-sm sm:text-base md:text-[13px] text-gray-500">
+      <p className="text-sm sm:text-base md:text-[13px] font-semibold text-gray-500">
         What We Do?
-      </h1>
+      </p>
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-800">
         No “magic.” Just Proven Logic.
       </h2>
