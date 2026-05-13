@@ -53,7 +53,7 @@ const EngagementModels: React.FC = () => {
             </h3>
             <Link
               href="#contact_us"
-              className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
+              className="relative hidden md:inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
              bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]
@@ -98,7 +98,7 @@ const EngagementModels: React.FC = () => {
             </h3>
             <Link
               href="#contact_us"
-              className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
+              className="relative hidden md:inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
              bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]

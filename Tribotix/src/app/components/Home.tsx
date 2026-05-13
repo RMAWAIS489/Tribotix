@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className={`flex flex-col items-center justify-center min-h-screen text-center px-4 pt-20 sm:pt-8 md:pt-8 lg:pt-8 ${dmSans.className}`}
+      className={`flex flex-col items-center justify-start min-h-[102vh] text-center px-4 pt-16  ${dmSans.className}`}
     >
       <video
         autoPlay
@@ -26,10 +26,10 @@ export default function Home() {
         Your browser does not support the video tag.
       </video>
 
-      <div className="relative z-10">
+      <div className="relative z-10 ">
         {/* Heading */}
         <h1
-          className="text-5xl md:text-5xl leading-snug mb-6 max-w-4xl font-semibold"
+          className="text-5xl md:text-5xl leading-snug mb-6 max-w-5xl font-semibold"
           style={{ color: "#53b1b8" }}
         >
           Leading{" "}
@@ -42,42 +42,38 @@ export default function Home() {
         </h2>
 
         {/* Paragraph */}
-        <p className="text-md text-gray-400 max-w-5xl mb-28 font-normal">
-          You’re likely spending more than you should on manual processes.{" "}
-          <span className="text-[#53b1b8] font-medium">CodrionAI</span> builds
-          custom AI systems that replace repetitive tasks, fix broken workflows,
-          and reduce your team’s workload — helping you save time, minimize
-          errors, and cut operating costs. Our automation frameworks are fully
-          customized to your business — no cookie-cutter templates, no wasted
-          hours, and no extra hires needed.
-          <br />
-          <br />
-          🔹 Built-for-you AI automation, tailored to your operations
-          <br />
-          🔹 No extra technical setup required from your end
-          <br />
-          🔹 We identify and automate what’s slowing your growth
-        </p>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mt-6 sm:mt-10">
-          {/* Gradient Button */}
-          <Link
-            href="#contact_us"
-            className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl
-                        bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44]
-                        bg-[length:200%_200%] animate-gradient-flow
-                        shadow-[0_0_15px_rgba(83,177,184,0.5)]
-                        hover:shadow-[0_0_30px_rgba(83,177,184,0.8)]
-                        hover:scale-[1.05] transition-all duration-500 ease-out"
-          >
-            <span className="relative z-10">Book a Free Consultation</span>
-          </Link>
-
-          {/* Text Link with Icon */}
-          <Link
+      <div className="flex flex-col items-center gap-6">
+  <p className="text-md text-gray-400 max-w-5xl font-normal">
+    You’re likely spending more than you should on manual processes.{" "}
+    <span className="text-[#53b1b8] font-medium">CodrionAI</span> builds
+    custom AI systems that replace repetitive tasks, fix broken workflows,
+    and reduce your team’s workload — helping you save time, minimize
+    errors, and cut operating costs. Our automation frameworks are fully
+    customized to your business — no cookie-cutter templates, no wasted
+    hours, and no extra hires needed.
+    <br />
+    <br />
+    🔹 Built-for-you AI automation, tailored to your operations
+    <br />
+    🔹 No extra technical setup required from your end
+    <br />
+    🔹 We identify and automate what’s slowing your growth
+  </p>
+<div className="flex flex-col sm:flex-row justify-center items-center gap-8">
+  <Link
+  href="#contact_us"
+  className="hidden md:inline-flex relative items-center justify-center px-8 py-3 text-white font-semibold rounded-xl
+             bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44]
+             bg-[length:200%_200%] animate-gradient-flow
+             shadow-[0_0_15px_rgba(83,177,184,0.5)]
+             hover:shadow-[0_0_30px_rgba(83,177,184,0.8)]
+             hover:scale-[1.05] transition-all duration-500 ease-out"
+>
+  <span className="relative z-10">Book a Free Consultation</span>
+</Link>
+  <Link
             href="#ai_automation"
-            className="group inline-flex items-center gap-2 text-gray-100 font-semibold text-base sm:text-lg transition-all duration-300 hover:text-[#53b1b8]"
+            className="hidden md:inline-flex  items-center gap-2 text-gray-100 font-semibold text-base sm:text-lg transition-all duration-300 hover:text-[#53b1b8]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +87,12 @@ export default function Home() {
               Explore Our Solutions
             </span>
           </Link>
-        </div>
+</div>
+
+</div>
+
+        {/* CTA Buttons */}
+        
       </div>
     </section>
   );

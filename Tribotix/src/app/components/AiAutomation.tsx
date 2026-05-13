@@ -49,8 +49,8 @@ const AiAutomation: React.FC = () => {
         <div className="flex justify-center md:justify-start">
           <Link
             href="#contact_us"
-            className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 text-white font-semibold rounded-xl 
-             bg-gradient-to-r from-[#021b2a] via-[#053b44] to-[#53b1b8] 
+            className="hidden md:inline-flex relative items-center justify-center px-8 py-3 text-white font-semibold rounded-xl
+             bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44]
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]
              hover:shadow-[0_0_30px_rgba(83,177,184,0.8)]

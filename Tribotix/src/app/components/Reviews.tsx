@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -92,9 +93,11 @@ export default function Reviews() {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* 👩 Profile Image */}
-          <img
+          <Image
             src={testimonial.image}
             alt={testimonial.name}
+            width={64}
+            height={64}
             className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover border-2 border-[#53b1b8] shadow-md"
           />
 

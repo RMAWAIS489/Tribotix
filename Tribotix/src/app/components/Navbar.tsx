@@ -6,15 +6,16 @@ import Link from "next/link";
 export default function Navbar() {
  
   return (
-   <nav className="w-full px-6 sm:px-8 py-3 flex items-center justify-center lg:justify-between shadow-md bg-transparent relative top-0 z-20">
+<nav className="w-full relative top-0 left-0 px-6 sm:px-8 py-3 flex items-center justify-center lg:justify-between shadow-md bg-transparent z-20">
+
   {/* Logo Section */}
   <div className="flex items-center justify-center gap-4">
-    <div className="relative w-36 h-auto flex items-center justify-center">
+    <div className="relative w-36 h-12 flex items-center justify-center">
       <Image
-        src="/images/logo1.png"
+        src="/images/logo1.jpg"
         alt="Tribotex Logo"
-        width={160}
-        height={80}
+        width={100}
+        height={100}
         className="object-contain"
         priority
       />
