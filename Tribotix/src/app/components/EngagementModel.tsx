@@ -4,10 +4,13 @@ import { motion } from "framer-motion";
 import { Users, Briefcase } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { dmSans } from "../layout";
 
 const EngagementModels: React.FC = () => {
   return (
-    <div  className="min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col items-center justify-center">
+    <div
+      className={`min-h-screen bg-white text-gray-900 px-6 md:px-16 py-20 flex flex-col items-center justify-center ${dmSans.className}`}
+    >
       {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: -50 }}
@@ -17,15 +20,18 @@ const EngagementModels: React.FC = () => {
         className="text-center max-w-3xl mb-16"
       >
         <div className="text-center space-y-6 mb-16">
-          <p>Engagement Models</p>
-          <h3 className="text-4xl text-[#316e72] mb-6">
-            Find the <span className="text-black font-bold"> “Right”</span>{" "}
-            package
+          <p className="text-sm sm:text-base md:text-[15px] font-semibold text-gray-500">
+            Engagement Models
+          </p>
+          <h3 className="text-4xl font-semibold text-[#316e72] mb-6">
+            Choose the <span className="text-black font-bold">Ideal</span>{" "}
+            Collaboration
           </h3>
 
-          <p className="text-md text-gray-500  mx-auto">
-            Enjoy a range of features designed to enhance your project
-            management experience, all at a price that fits your budget.
+          <p className="text-md text-gray-500 mx-auto">
+            Explore flexible AI partnership models built to accelerate your
+            growth — whether you need workflow automation, RAG pipelines, or
+            full-scale product delivery.
           </p>
         </div>
       </motion.div>
@@ -42,12 +48,12 @@ const EngagementModels: React.FC = () => {
         >
           {/* Title and Button Row */}
           <div className="w-full flex items-center justify-between">
-            <h3 className="text-2xl font-semibold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
-              Level Up My Team
+            <h3 className="text-2xl font-bold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
+              Augment My AI Team
             </h3>
             <Link
               href="#contact_us"
-              className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
+              className="relative hidden md:inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
              bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]
@@ -66,13 +72,13 @@ const EngagementModels: React.FC = () => {
               <Users className="w-8 h-8 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />
             </div>
             <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
-              Need to fill gaps in your development team or looking for specific
-              skill sets?
+              Need skilled experts to boost your AI automation or RAG-based
+              workflows?{" "}
               <span className="font-semibold text-[#053b44]">
-                {" "}
-                LeapsDev
+                CodrionAI
               </span>{" "}
-              can help augment your team for fast, efficient success.
+              can integrate seamlessly with your existing team to accelerate
+              delivery and innovation.
             </p>
           </div>
         </motion.div>
@@ -87,12 +93,12 @@ const EngagementModels: React.FC = () => {
         >
           {/* Title and Button Row */}
           <div className="w-full flex items-center justify-between">
-            <h3 className="text-2xl font-semibold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
-              All-in-one Solution
+            <h3 className="text-2xl font-bold text-[#053b44] group-hover:text-[#53b1b8] transition-colors duration-300">
+              Full-Cycle AI Solution
             </h3>
             <Link
               href="#contact_us"
-              className="relative inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
+              className="relative hidden md:inline-flex items-center justify-center px-8 py-3 text-white font-semibold rounded-xl 
              bg-gradient-to-r from-[#0ba5ec] via-[#53b1b8] to-[#053b44] 
              bg-[length:200%_200%] animate-gradient-flow
              shadow-[0_0_15px_rgba(83,177,184,0.5)]
@@ -111,10 +117,12 @@ const EngagementModels: React.FC = () => {
               <Briefcase className="w-8 h-8 text-[#53b1b8] group-hover:text-white transition-colors duration-300" />
             </div>
             <p className="text-gray-700 text-[15px] leading-relaxed text-justify">
-              Have an idea but no team? We're capable of providing the{" "}
-              <span className="font-semibold text-[#053b44]">Full Package</span>{" "}
-              — from developers to project managers — so you can focus on your
-              business goals.
+              Have a product vision but no tech team? Our{" "}
+              <span className="font-semibold text-[#053b44]">
+                end-to-end AI development model
+              </span>{" "}
+              handles everything — from automation logic and RAG pipelines to
+              scalable SaaS delivery — so you can focus on your business.
             </p>
           </div>
         </motion.div>

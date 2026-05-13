@@ -3,32 +3,34 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
+import { dmSans } from "../layout";
 
 const faqs = [
   {
-    question: "What makes LeapsDev different?",
+    question: "What makes CodrionAI different?",
     answer:
-      "Our edge lies in our team — top 1% experts in design, development, and AI. Plus, we approach every project with a focus on ROI, usability, and scalability.",
+      "Our strength lies in deep AI expertise — from automation to RAG-driven workflows. Every solution is built for accuracy, scalability, and measurable impact.",
   },
   {
-    question: "How soon can we get started?",
+    question: "How quickly can we start a project?",
     answer:
-      "Usually within 48 hours after the initial discovery call. We move fast — without compromising quality.",
+      "Usually within 48 hours of the initial discovery session. We move fast, keeping quality and innovation at the core of delivery.",
   },
   {
-    question: "Do you offer post-launch support?",
+    question: "Do you offer maintenance and optimization?",
     answer:
-      "Yes. All our solutions come with optional ongoing support and maintenance packages.",
+      "Yes. We provide continuous monitoring, retraining, and optimization for AI systems to ensure lasting performance and value.",
   },
   {
-    question: "What kind of businesses do you work with?",
+    question: "What types of industries do you serve?",
     answer:
-      "We work with businesses of all sizes — from solo entrepreneurs to enterprise clients — across industries like BPO, SaaS, retail, coaching, and more.",
+      "We work with startups, enterprises, and agencies across industries like SaaS, logistics, healthcare, education, and e-commerce — wherever AI automation adds value.",
   },
   {
-    question: "Can you integrate with my current CRM or tools?",
+    question: "Can CodrionAI integrate with my current systems?",
     answer:
-      "Absolutely. We specialize in integrating with platforms like HubSpot, Zoho, Salesforce, Pabbly, and many others — you name it.",
+      "Absolutely. We integrate seamlessly with CRMs, APIs, and data platforms — from HubSpot and Zoho to Airtable, Slack, and custom-built dashboards.",
   },
 ];
 
@@ -42,7 +44,9 @@ export default function Footer() {
   return (
     <>
       {/* FAQs Section */}
-      <section className="w-full bg-[#053b44] text-white py-24 px-6 md:px-16 lg:px-24">
+      <section
+        className={`w-full bg-[#053b44] text-white py-24 px-6 md:px-16 lg:px-24 ${dmSans.className}`}
+      >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14">
           {/* Left Section */}
           <motion.div
@@ -56,12 +60,12 @@ export default function Footer() {
               FAQs
             </h3>
             <h2 className="text-4xl font-bold text-white">
-              Frequently asked questions
+              Frequently Asked Questions
             </h2>
             <p className="text-gray-300 leading-relaxed">
-              Discover our help desk FAQs to learn how we efficiently address
-              your technical issues, ensuring you receive the support needed to
-              stay productive and focused.
+              Explore CodrionAI’s FAQ hub to learn how our automation experts
+              build intelligent workflows, RAG-based agents, and scalable AI
+              products tailored to your goals.
             </p>
           </motion.div>
 
@@ -102,96 +106,114 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider line */}
-        <div className="relative mt-24 w-full h-[2px] overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent animate-moveLine"></div>
+        <div className="relative mt-16 w-full h-[2px] overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent"></div>
         </div>
       </section>
 
-      <section className="w-full bg-[#053b44] text-gray-300 py-8 px-6 md:px-16 lg:px-24">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
-          {/* About */}
-          <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-white">LeapsDev.Com</h3>
-            <p className="text-sm  text-gray-400 leading-relaxed text-justify">
-              We’re not just here to code, automate, or design — we’re here to
-              solve, simplify, and scale what truly moves your business forward.
-              Your vision deserves more than a service. It deserves a team that
-              listens, builds, and believes.
+      <section className="w-full bg-[#053b44] text-gray-300 py-10 px-5 sm:px-10 md:px-16 lg:px-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 sm:gap-12 text-center md:text-left">
+          {/* About Section */}
+          <div className="flex flex-col items-center md:items-start space-y-4">
+            {/* Logo */}
+            <div className="relative w-32 sm:w-40 flex items-center justify-center md:justify-start">
+              <Image
+                src="/images/logo1.png"
+                alt="CodrionAI Logo"
+                width={160}
+                height={80}
+                className="object-contain"
+                priority
+              />
+            </div>
+
+            {/* Description */}
+            <p className="text-sm text-gray-400 leading-relaxed max-w-xs sm:max-w-sm md:max-w-[12rem] text-center md:text-justify">
+              At CodrionAI, we design automation systems that think, adapt, and
+              scale. From AI agents to RAG pipelines — we transform your
+              workflows into intelligent, data-driven engines of growth.
             </p>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">Services</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">
-                Web Development
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Sales & Marketing
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                E-commerce Solutions
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Business Automation
-              </li>
-              <li className="hover:text-[#53b1b8] transition">
-                Custom AI Agents
-              </li>
+            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4">
+              Services
+            </h4>
+            <ul className="space-y-2 text-sm sm:text-base text-gray-400">
+              {[
+                "AI Workflow Automation",
+                "Custom SaaS Development",
+                "RAG & Agentic Systems",
+                "Voice & Chat Agents",
+                "Data Integration Solutions",
+              ].map((service) => (
+                <li
+                  key={service}
+                  className="hover:text-[#53b1b8] transition-colors duration-300 cursor-pointer"
+                >
+                  {service}
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">
+            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">Home</li>
-              <li className="hover:text-[#53b1b8] transition">Services</li>
-              <li className="hover:text-[#53b1b8] transition">About Us</li>
-              <li className="hover:text-[#53b1b8] transition">Contact Us</li>
-              <li className="hover:text-[#53b1b8] transition">Work With Us</li>
+            <ul className="space-y-2 text-sm sm:text-base text-gray-400">
+              {[
+                "Home",
+                "Solutions",
+                "About CodrionAI",
+                "Contact Us",
+                "Join Our Team",
+              ].map((link) => (
+                <li
+                  key={link}
+                  className="hover:text-[#53b1b8] transition-colors duration-300 cursor-pointer"
+                >
+                  {link}
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-2xl font-semibold text-white mb-3">
+          <div className="w-full">
+            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-4">
               Get In Touch!
             </h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li className="hover:text-[#53b1b8] transition">
+            <ul className="space-y-1 text-sm sm:text-base text-gray-400">
+              <li className="hover:text-[#53b1b8] transition-colors duration-300">
                 📞 Phone: (+1) 786 9520-251
               </li>
-              <li className="hover:text-[#53b1b8] transition">
+              <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
                 💬 WhatsApp: (+92) 327-1080-439
               </li>
-              <li className="hover:text-[#53b1b8] transition">
-                ✉️ Email: Contact@leapsdev.com
+              <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
+                ✉️ Email: contact@codrionai.com
               </li>
-              <li className="hover:text-[#53b1b8] transition">
-                📍 4CCX+FW, Railway Rd, Kasur, 55050
+              <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
+                📍 Lahore, Pakistan – 55050
               </li>
-              <li className="hover:text-[#53b1b8] transition">
+              <li className="hover:text-[#53b1b8] text-sm transition-colors duration-300">
                 📍 Miami, Florida (FL), 33162, United States
               </li>
             </ul>
           </div>
         </div>
-        {/* Footer Bottom Animated Line */}
-    <div className="relative mt-16 w-full h-[2px] overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent"></div>
-</div>
 
+        {/* Footer Bottom Line */}
+        <div className="relative mt-10 w-full h-[1px] overflow-hidden bg-gradient-to-r from-transparent via-[#53b1b8] to-transparent opacity-60"></div>
 
-        {/* Copyright Text */}
-        <div className="mt-8 pt-6 text-center text-sm text-gray-400">
+        {/* Copyright */}
+        <div className="mt-6 text-center text-xs sm:text-sm text-gray-400">
           © 2025{" "}
-          <span className="text-[#53b1b8] font-semibold">LeapsDev.Com</span>{" "}
-          PVT. LTD. All rights reserved.
+          <span className="text-[#53b1b8] font-semibold">CodrionAI</span> Pvt.
+          Ltd. All rights reserved.
         </div>
       </section>
     </>
